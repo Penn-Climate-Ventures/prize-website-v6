@@ -33,10 +33,8 @@ const FinalRound = () => {
               <li><strong>High School Track:</strong> April 26 Saturday 3PM - 5:30PM EST</li>
               <li><strong>University Track:</strong> April 27 Sunday 3PM - 5:30PM EST</li>
             </ul>
-            
-            <p>
-              Finalists must submit their slide deck that they will use during their pitch through the forms below by April 25 11:59 EST.
-            </p>
+            <h3>Recording Links:</h3>
+          
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', margin: '30px 0' }}>
               <a
@@ -45,7 +43,7 @@ const FinalRound = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                High School Form
+                High School 
               </a>
               
               <a
@@ -54,7 +52,7 @@ const FinalRound = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                University Form
+                University 
               </a>
             </div>
 

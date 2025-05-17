@@ -68,7 +68,7 @@ const Application = () => {
               Solutions can range from physical products to forums, events, or community service initiatives—either new ideas or existing projects you want to expand. Participants are encouraged to submit a prototype or demonstrate tangible progress, though it doesn’t need to be extensive.
               <br />
               <br />
-              The deadline for the first round is April 4th, 11:59PM EST. Apply below!
+              The deadline for the first round was April 4th, 11:59PM EST. Applications are now closed.
             </p>
 
             <a

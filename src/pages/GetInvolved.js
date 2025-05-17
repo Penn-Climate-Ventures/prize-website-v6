@@ -26,7 +26,7 @@ const GetInvolved = () => {
           <div className="content">
             <p>
               Penn Climate Ventures is always looking for new sponsors and judges to help support
-              our mission.
+              our mission. Please select an option below:
             </p>
           </div>
         </section>
@@ -76,33 +76,30 @@ const GetInvolved = () => {
                 serving as a judge, you'll empower student entrepreneurs to bring their ideas to
                 life.
               </p>
-              <p>
-                Reach out to prizepcv@gmail.com if you are interested in becoming a judge or mentor
-                for next year's competition. We are recruiting judges for each of the three rounds:
-                written application, slide deck, and live pitch judging.
-              </p>
-              <br />
-              <h3>Final Round Judges:</h3>
-              <div className="judges-list">
-                <div className="judge-item">
-                  <img src={`${process.env.PUBLIC_URL}/final-round-judges/annelise-dyer.jpeg`} alt="Anneliese Dyer" className="judge-photo" />
-                  <p>Anneliese Dyer, 4AIR</p>
-                </div> 
-                <div className="judge-item">
-                  <img src={`${process.env.PUBLIC_URL}/final-round-judges/david-jacoby.jpeg`} alt="David Steven Jacoby" className="judge-photo" />
-                  <p>David Steven Jacoby, NYU Stern Business School</p> 
-                </div>
-                <div className="judge-item">
-                  <img src={`${process.env.PUBLIC_URL}/final-round-judges/daniel-bloch.jpeg`} alt="Daniel Bloch" className="judge-photo" />
-                  <p>Daniel Bloch, Lanzajet</p>
-                </div>
-                <div className="judge-item">
-                  <img src={`${process.env.PUBLIC_URL}/final-round-judges/chuck-hurchalla.jpeg`} alt="Chuck Hurchalla" className="judge-photo" />
-                  <p>Chuck Hurchalla, Evolution Sustainability Group</p>
-                </div>
+              <p>Reach out to prizepcv@gmail.com if you are interested in becoming a judge or mentor for next year's competition. We are recruiting judges for each of the three rounds: written application, slide
+              deck, and live pitch judging.</p>
+
+              {/* Final Round Judges Section */}
+              <h3 style={{ fontFamily: 'Roboto, sans-serif', fontSize: '1.8rem', marginTop: '30px' }}>Final Round Judges</h3>
+              <p>We are immensely grateful to our distinguished Final Round Judges for their expertise and dedication:</p>
+              <div className="final-judges-container">
+                {[
+                  { name: "Anneliese Dyer", affiliation: "4AIR", img: "annelise-dyer.jpeg" },
+                  { name: "David Steven Jacoby", affiliation: "NYU Stern Business School", img: "david-jacoby.jpeg" },
+                  { name: "Daniel Bloch", affiliation: "Lanzajet", img: "daniel-bloch.jpeg" },
+                  { name: "Chuck Hurchalla", affiliation: "Evolution Sustainability Group", img: "chuck-hurchalla.jpeg" }
+                ].map(judge => (
+                  <div key={judge.name} className="final-judge-item">
+                    <img src={`${process.env.PUBLIC_URL}/final-round-judges/${judge.img}`} alt={judge.name} />
+                    <h4>{judge.name}</h4>
+                    <p>{judge.affiliation}</p>
+                  </div>
+                ))}
               </div>
-              <br />
-              <h3>We would like to thank our Round 1 Judges for their hard work grading the pitches. We could not have done this without their respective expertise in the field. Thank you to:</h3>
+
+              {/* First Round Adjudicators Section */}
+              <h3 style={{ fontFamily: 'Roboto, sans-serif', fontSize: '1.8rem', marginTop: '40px' }}>First Round Adjudicators</h3>
+              <p>We would also like to thank our First Round Adjudicators for their hard work grading the pitches. We could not have done this without their respective expertise in the field. Thank you to: </p>
               <ul>
                 <li>Siddharth Gundala - Columbia University, Master's Student in Climate and Society</li>
                 <li>Julia Campbell - University of Michigan, PhD Student in Climate Science</li>
@@ -111,7 +108,7 @@ const GetInvolved = () => {
                 <li>Ananya A. Pillai - University of Pennsylvania, Master's Student in Environmental Studies</li>
                 <li>Bailey Lin - University of Pennsylvania, Master's Student in Environmental Studies</li>
                 <li>Jiayu Tang - University of Pennsylvania, Master's Student in Environmental Studies</li>
-                <li>Riqi Zhang - Imperial College London, PhD Student at the Center of Environmental Policy</li>
+                <li>Riqi Zhang - Imperial College London, PhD Candidate at the Center of Environmental Policy</li>
                 <li>Anne Rolim - Columbia University, Master's Student in Sustainability Management</li>
                 <li>Anar Amarjargal - Columbia University, Master's Student in Climate and Society</li>
                 <li>Yeraldi Loera - Princeton University, PhD Student in Ecology and Evolutionary Biology</li>
@@ -122,7 +119,6 @@ const GetInvolved = () => {
                 <li>Alexandra Gonzalez - Columbia University, Master's Student in Climate and Society, Policy</li>
                 <li>Molly Fowler - University of Pennsylvania, Master's Student in Environmental Studies</li>
               </ul>
-              <br />
               {/* <p><strong>Judge List:</strong></p>
               <p>Photos and descriptions of judges will be added here.</p> */}
               <br /><br />
