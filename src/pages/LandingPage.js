@@ -26,10 +26,10 @@ const LandingPage = () => {
             borderRadius: '5px',
             margin: '10px 0',
           }}>
-             <h2 style={{ color: '#fff', margin: '0 0 5px 0', fontSize: '1.5rem' }}>FINAL ROUND</h2>
+             <h2 style={{ color: '#fff', margin: '0 0 5px 0', fontSize: '1.5rem' }}>FINAL ROUND:</h2>
             <p style={{ color: '#fff', margin: '0' }}>
-            <b>High School - APRIL 26th @ 3 PM EST - <a href="https://youtu.be/6n_g7wZBZ6U" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'underline', color: '#fff', fontWeight: 'bold'}}>RECORDING</a></b><br/>
-            <b>University - APRIL 27th @ 3 PM EST - <a href="https://youtu.be/NTjYkhhJYO4" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'underline', color: '#fff', fontWeight: 'bold'}}>RECORDING</a></b>
+            <b> <a href="https://youtu.be/6n_g7wZBZ6U" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'underline', color: '#fff', fontWeight: 'bold'}}>High School Recording</a></b><br/>
+            <b> <a href="https://youtu.be/NTjYkhhJYO4" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'underline', color: '#fff', fontWeight: 'bold'}}>University Recording</a></b>
             </p>
           </div>
           <p className="subheading">Preparing tomorrow's leaders to tackle today's climate crisis.</p>
