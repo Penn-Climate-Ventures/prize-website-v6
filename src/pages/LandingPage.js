@@ -2,7 +2,6 @@ import React from 'react';
 import Navbar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Countdown from '../components/countdown/countdown';
-import { Link } from 'react-router-dom';
 
 import './LandingPage.css';
 
@@ -20,20 +19,9 @@ const LandingPage = () => {
 
         <div className="hero-content">
           <h1 className="title">UPenn Eco-Venture Challenge</h1>
-          <div className="ceremony-banner" style={{
-            backgroundColor: 'rgba(0, 0, 0, 0.7)',
-            padding: '10px 20px',
-            borderRadius: '5px',
-            margin: '10px 0',
-          }}>
-             <h2 style={{ color: '#fff', margin: '0 0 5px 0', fontSize: '1.5rem' }}>FINAL ROUND:</h2>
-            <p style={{ color: '#fff', margin: '0' }}>
-            <b> <a href="https://youtu.be/6n_g7wZBZ6U" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'underline', color: '#fff', fontWeight: 'bold'}}>High School Recording</a></b><br/>
-            <b> <a href="https://youtu.be/NTjYkhhJYO4" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'underline', color: '#fff', fontWeight: 'bold'}}>University Recording</a></b>
-            </p>
-          </div>
-          <p className="subheading">Preparing tomorrow's leaders to tackle today's climate crisis.</p>
-          <p className="subcountdown">See you next year!</p>
+          <p className="subheading">Preparing tomorrow's leaders to tackle today's climate crisis!</p>
+          <p className="subcountdown">ROUND 1 APPLICATION OPENS</p>
+          <Countdown targetDate={new Date("2026-01-26T00:00:00")} />
           <img 
             src={`${process.env.PUBLIC_URL}/double-arrow-down.png`} 
             alt="Scroll down"
@@ -60,13 +48,14 @@ const LandingPage = () => {
             If you're at all interested in addressing environmental issues through a business perspective, 
             this competition is a perfect way to get real-world experience and feedback from industry experts.
             </p>
-            {/* <Link
-              to="https://airtable.com/appsSPuO4G3jMYsxD/page4XsJ8x8dN0WKG/form"
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdDMYJYYdEmjE7_GSvv3tzHyCe5ULHESMS9Qs0CddyfaC51FQ/viewform"
               className="cta-button"
-              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Register Now!
-            </Link> */}
+              Interest Form
+            </a>
           </div>
         </section>
 
@@ -77,7 +66,7 @@ const LandingPage = () => {
             <br /><br />
             <h2 className="heading">Up to $10,000 in prizes!</h2>
             <p>
-              In The EcoVenture Challenge, you will have the opportunity to compete for a <b>$10,000 TOTAL PRIZE POOL!</b> Our mission with this cash prize is to inspire upcoming entrepreneurs and fuel personal environmental projects. The prize is flexible and will be directly deposited to participants. We hope that our flexible prize money will motivate students and ultimately create Penn's most impactful sustainability competition yet.
+              In The EcoVenture Challenge, you will have the opportunity to compete for <b>up to $10,000 total prize pool</b>! Our mission with this cash prize is to inspire upcoming entrepreneurs and fuel personal environmental projects. The prize is flexible and will be directly deposited to participants. We hope that our flexible prize money will motivate students and ultimately create Penn's most impactful sustainability competition yet.
             </p>
             <br /><br /><br />
           </div>
